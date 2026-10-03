@@ -20,6 +20,7 @@ onAuthStateChanged(auth, async (user) => {
 
     if (!approved) {
       const params = new URLSearchParams();
+      params.set("uid", user.uid);
       params.set("exists", String(accessSnap.exists()));
       params.set("approved", String(approvedValue));
       params.set("type", typeof approvedValue);
