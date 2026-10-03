@@ -15,10 +15,15 @@ onAuthStateChanged(auth, async (user) => {
 
   try {
     const accessSnap = await getDoc(doc(db, "access", user.uid));
-    const approved = accessSnap.exists() && accessSnap.data().approved === true;
+    const approvedValue = accessSnap.exists() ? accessSnap.data().approved : undefined;
+    const approved = accessSnap.exists() && approvedValue === true;
 
     if (!approved) {
-      window.location.replace("access-required.html");
+      const params = new URLSearchParams();
+      params.set("exists", String(accessSnap.exists()));
+      params.set("approved", String(approvedValue));
+      params.set("type", typeof approvedValue);
+      window.location.replace("access-required.html?" + params.toString());
       return;
     }
 
