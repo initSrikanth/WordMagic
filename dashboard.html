@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>WordMagic | Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="protected-page">
+  <header class="topbar">
+    <a class="logo" href="dashboard.html">Word<span>Magic</span></a>
+    <div class="user-area">
+      <img data-user-photo class="avatar" alt="Google profile" hidden>
+      <div><strong data-user-name>Learner</strong><small data-user-email></small></div>
+      <button class="outline-button" data-logout type="button">Log out</button>
+    </div>
+  </header>
+  <main class="dashboard">
+    <section class="hero">
+      <p class="eyebrow">YOUR ENGLISH LEARNING SPACE</p>
+      <h1>Hello, <span data-user-name>Learner</span>!</h1>
+      <p>Read closely, think deeply and build confident English skills.</p>
+    </section>
+
+    <section class="year-strip" aria-labelledby="year-heading">
+      <strong id="year-heading">Choose year</strong>
+      <div class="year-buttons" aria-label="Year levels">
+        <button type="button" disabled>1</button><button type="button" disabled>2</button><button type="button" disabled>3</button><button type="button" disabled>4</button>
+        <button type="button" class="selected" aria-current="true">5</button>
+        <button type="button" disabled>6</button><button type="button" disabled>7</button><button type="button" disabled>8</button><button type="button" disabled>9</button>
+      </div>
+      <small>Year 5 is active now. Other year levels are planned for later.</small>
+    </section>
+
+    <section aria-labelledby="language-heading">
+      <p class="section-kicker">YEAR 5 • LANGUAGE</p>
+      <h2 id="language-heading">Build powerful sentences</h2>
+      <div class="activity-grid">
+        <article class="activity-card featured">
+          <div class="activity-icon" aria-hidden="true">Aa</div>
+          <div>
+            <span class="pill">FIRST TOPIC • COMING NEXT</span>
+            <h3>Sentences, Clauses &amp; Cohesion</h3>
+            <p>5 learning pages + 30-question challenge.</p>
+            <p class="topic-note">Learn how complete ideas, clauses and sentence connections make writing clear and effective.</p>
+            <span class="status-badge">FOUNDATION READY</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="roadmap" aria-labelledby="roadmap-heading">
+      <p class="section-kicker">WORDMAGIC ROADMAP</p>
+      <h2 id="roadmap-heading">Year 5 English</h2>
+      <p>Future topics will integrate Language, Literature and Literacy. They will be added only after curriculum mapping and quality review.</p>
+    </section>
+  </main>
+  <script type="module" src="js/auth-guard.js"></script>
+</body>
+</html>
