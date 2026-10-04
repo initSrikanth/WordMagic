@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>WordMagic | Dashboard</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=topic1">
 </head>
 <body class="protected-page">
   <header class="topbar">
@@ -36,16 +36,21 @@
       <p class="section-kicker">YEAR 5 • LANGUAGE</p>
       <h2 id="language-heading">Build powerful sentences</h2>
       <div class="activity-grid">
-        <article class="activity-card featured">
+        <a class="activity-card featured topic-link" href="sentences-clauses-cohesion.html">
           <div class="activity-icon" aria-hidden="true">Aa</div>
-          <div>
-            <span class="pill">FIRST TOPIC • COMING NEXT</span>
+          <div class="topic-card-body">
+            <span class="pill">YEAR 5 • READY</span>
             <h3>Sentences, Clauses &amp; Cohesion</h3>
             <p>5 learning pages + 30-question challenge.</p>
             <p class="topic-note">Learn how complete ideas, clauses and sentence connections make writing clear and effective.</p>
-            <span class="status-badge">FOUNDATION READY</span>
+            <div class="progress-panel" data-topic-progress="sentences-clauses-cohesion">
+              <div class="progress-row"><span>Practice <b class="practice-dots">○ ○ ○ ○ ○</b></span><span data-attempts>0/5</span></div>
+              <div class="mini-progress"><i data-progress-bar style="width:0%"></i></div>
+              <div class="progress-row"><span data-best>Best: —</span><button type="button" class="tiny-reset" data-reset-topic="sentences-clauses-cohesion" title="Reset topic progress">Reset</button><span class="proficiency-badge" data-proficiency>START</span></div>
+            </div>
+            <strong class="start-link">Start learning →</strong>
           </div>
-        </article>
+        </a>
       </div>
     </section>
 
@@ -55,6 +60,6 @@
       <p>Future topics will integrate Language, Literature and Literacy. They will be added only after curriculum mapping and quality review.</p>
     </section>
   </main>
-  <script type="module" src="js/auth-guard.js?v=access-fixed"></script>
+  <script type="module" src="js/auth-guard.js?v=topic1"></script>
 </body>
 </html>
